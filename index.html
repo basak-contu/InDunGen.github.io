@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InDunGen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Vanilla_tiles.png");
+    min-height: 75%;
+    color:white;
+}
+
+.menu {
+  display: none;
+}
+
+.button-container, .member-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    padding: 20px 50px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: azure;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 60px;
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: azure; /* Change background color on hover */
+}
+
+.member {
+    padding: 20px 50px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: azure;
+    color: black;
+    border: none;
+    font-size: 20px;
+    margin: 0 60px;
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.subsection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s2">
+            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s2">
+            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s2">
+            <a href="#video" class="w3-button w3-block w3-black">VIDEO</a>
+        </div>
+        <div class="w3-col s2">
+            <a href="#documents" class="w3-button w3-block w3-black">DOCUMENTS</a>
+        </div>
+        <div class="w3-col s2">
+            <a href="#team" class="w3-button w3-block w3-black">TEAM</a>
+        </div>
+        <div class="w3-col s2">
+            <a href="#where" class="w3-button w3-block w3-black">METHOD DETAILS</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-center">
+        <span class="w3-black" style="font-size:120px"><br>InDunGen</span>
+    </div>
+    <!--<div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">15 Adr street, 5015</span>
+    </div>-->
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<!--<div class="w3-sand w3-grayscale w3-large">-->
+<div class="w3-sand w3-black w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+        <p>In today's game industry, procedural map generation algorithms frequently used for generating game levels.In project InDunGen, we wanted to try GAN-based approach for generating game levels.</p>
+        <p>InDunGen focuses on utilizing Generative Adversarial Networks (GANs) to generate maps for games, specifically focusing on the popular rouge-like game NetHack. The objective is to train GAN models to learn from existing levels and generate new, diverse levels while maintaining the game's complexity.
+        We aimed to provide a novel approach to level design that enchances replayability and engagement for players.</p>
+        <!--<p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>-->
+    </div>
+</div>
+
+<!-- Video Container -->
+<div class="w3-container" id="video">
+    <div class="w3-content" style="max-width:700px">
+       <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE VIDEO</span></h5>
+       <iframe style="width:100%;max-width:1000px;height:stretch" src="https://www.youtube.com/watch?v=BCde68k6KXg&t=1298s" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Documents Container -->
+<div class="w3-container" id="documents" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DOCUMENTS</span></h5>
+        <div class="button-container">
+            <a href="https://github.com/Kayla-Eren-Basak-Design-Project"><p><button class="button">GitHub</button></p></a>
+            <a href="https://github.com"><p><button class="button">End of Project Report</button></p></a>
+            <a href="https://trello.com/b/Mz5tZ0o9/indungen-gan-based-map-generation"><p><button class="button">Trello</button></p></a>
+        </div>
+    </div>
+</div>
+
+<!-- Team Members Container -->
+<div class="w3-container" id="team">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TEAM MEMBERS</span></h5>
+    <div class="member-container">
+        <p class="member">Kayla AKYÜZ</p>
+        <p class="member">Başak ÇONTU</p>
+        <p class="member">Eren KUMRU</p>
+    </div>
+    </div>
+</div>
+
+
+<!-- Method Container -->
+<div class="w3-container" id="method">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">METHOD DETAILS</span></h5>
+
+        <!-- Subsection 1 -->
+        <div class="subsection">
+            <h5>Dataset Preparation</h5>
+            <p>We collected a large dataset of existing NetHack levels as the training data for GAN models by modifying <a href="https://github.com/NetHack/NetHack">NetHack's source code.</a> We exported level data as unsigned char array then modified them for training.</p>
+            <div class="image-container">
+                <img src="nethack level original.png" class="centered-image" alt="Original">
+                <img src="nethack level data.png" class="centered-image" alt="Modified">
+            </div>
+
+        </div>
+
+        <!-- Subsection 2 -->
+        <div class="subsection">
+            <h5>Nvidia's StyleGAN2</h5>
+            <p>NVIDIA StyleGAN2 is a deep learning-based generative model developed by NVIDIA, which is designed to generate high-quality images with realistic and diverse visual content. It is an improved version of the original StyleGAN model.The main objective of StyleGAN2 is to generate highly realistic and visually appealing images that resemble a specific dataset or follow a certain style. The model achieves this by learning the underlying distribution of the training data and generating new images that capture the characteristics and variations present in the dataset.</p>
+            <p>In the project, we utilized the NVIDIA StyleGAN2 model for generating new levels in the game NetHack. The main objective was to leverage the power of generative adversarial networks (GANs) and the high-quality image generation capabilities of StyleGAN2 to create diverse and visually appealing levels. Here is one of the generated level.</p>
+            <div class="image-container">
+                <img src="generated level stylegan2.jpg" class="centered-image" alt="Generated StyleGAN2">
+            </div>
+        </div>
+
+        <!-- Subsection 3 -->
+        <div class="subsection">
+            <h5>GAN using Adaptive Instance Normalization</h5>
+            <p>Adaptive Instance Normalization (AdaIN), aims to improve the style transfer abilities of the generator network.Normalizing the features in the generator is necessary for strong training and generating consistent outputs. Other normalization techniques, such as Batch Normalization (BN), can effectively normalize the features but remove the style information. This limitation limits the ability of GANs to produce diverse outputs.  AdaIN addresses this limitation by dynamically adjusting the mean and standard deviation of the features in the generator network based on the desired style information. It achieves this by leveraging the statistics from a style reference image, which serves as a source of style information. </p>
+        </div>
+    </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+</footer>
+
+</body>
+</html>
